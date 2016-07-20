@@ -30,6 +30,13 @@ a:hover {
 	margin: auto;
 }
 
+#contact {
+	text-align: left;
+	max-width: 50vh;
+	margin: auto;
+	padding-top: 100px;
+}
+
 ul#songs {
 	padding: 0;
 	margin: auto;

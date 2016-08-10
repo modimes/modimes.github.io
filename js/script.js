@@ -1,20 +1,20 @@
 $(function() {
 	$('a[href*="#"]:not([href="#"])').click(function() {
 		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-			var target = $(this.hash);
-			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-			var duration = 1000 + Math.abs($('html, body').scrollTop() - target.offset().top) / 10;
+			var target = $(this.hash)
+			target = target.length ? target : $('[name=' + this.hash.slice(1) +']')
 			if (target.length) {
 				$('html, body').animate({
 					scrollTop: target.offset().top
-				}, duration, "swing", function() {
-					isScrolling = false;
-				});
-				return false;
+				}, 1000, "swing", function() {
+					isScrolling = false
+					$('#contact').css('opacity', '1')
+				})
+				return false
 			}
 		}
-	});
-});
+	})
+})
 
 var isScrolling = false;
 
@@ -27,19 +27,25 @@ setTimeout(function() {
 	if ($(window).scrollTop() == 0) {
 		if (!isScrolling)
 			scroll2top();
+			$('#contact').css('opacity', '1')
 	}
 }, 1000);
 
 var lastScrollTop = 0;
 addEventListener("scroll", function() {
 	var st = $(this).scrollTop();
-	if (st > lastScrollTop){
+	if (st > lastScrollTop) {
 		if (isScrolling) {
 			window.scrollTo(0, st)
 		} else {
-			if (window.scrollY < $('a[name="top').position().top)
+			if (window.scrollY < $('a[name="top').position().top) {
 				scroll2top();
+			}
 		}
+	}
+
+	if (window.scrollY < $('a[name="top').position().top) {
+		$('#contact').css('opacity', '0')
 	}
 	lastScrollTop = st;
 }, true);

@@ -34,7 +34,10 @@ a:hover {
 	text-align: left;
 	max-width: 50vh;
 	margin: auto;
-	padding-top: 100px;
+	margin-top: -14vh;
+	margin-bottom: 14vh;
+	transition: all 0.5s;
+	opacity: 0;
 }
 
 ul#songs {
@@ -116,7 +119,7 @@ footer {
 
 a[name="top"] {
 	position: relative;
-	top: -26vh;
+	top: -28vh;
 	color: transparent;
 }
 

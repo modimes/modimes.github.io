@@ -65,16 +65,22 @@ li {
 	padding-top: 100px;
 }
 
-a:hover > .title {
+a:hover>.title {
 	color: black;
 }
 
 /*a:hover > li {*/
-	/*background: rgb(0, 174, 238) none repeat scroll 0% 0%;*/
-	/*border-radius: 10px;*/
-	/*color: white;*/
-	/*padding: 8px 10px 5px;*/
-	/*font-weight: bold;*/
+
+/*background: rgb(0, 174, 238) none repeat scroll 0% 0%;*/
+
+/*border-radius: 10px;*/
+
+/*color: white;*/
+
+/*padding: 8px 10px 5px;*/
+
+/*font-weight: bold;*/
+
 /*}*/
 
 .title, .lyrics {
@@ -91,21 +97,19 @@ a:hover > .title {
 	height: 1.4em;
 }
 
-.back2top > i {
+.back2top>i {
 	float: right;
 	color: #008eee;
 	height: 30px;
 	font-size: 1.4em;
 }
 
-
-
 .back2top:hover {
 	/*background: #00aeee;*/
 	background: rgba(0, 174, 238, 0.24);
 }
 
-.back2top:hover > i {
+.back2top:hover>i {
 	color: white;
 }
 

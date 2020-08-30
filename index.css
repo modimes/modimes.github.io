@@ -23,7 +23,7 @@ a:hover {
 	max-width: 100vw;
 	min-height: 100vh;
 	max-height: 100vw;
-	background-image: url(../img/cover.jpg);
+	background-image: url(img/aquarius.jpg);
 	background-position: center center;
 	background-size: cover;
 	background-color: #464646;
@@ -129,4 +129,29 @@ a[name="top"] {
 
 #part2 {
 	margin-top: 25px;
+}
+
+.other-albums {
+	display: flex;
+	/* justify-content: center; */
+	align-items: center;
+	max-width: 50vh;
+	margin: auto;
+	margin-top: 3rem;
+	margin-bottom: 4rem;
+}
+
+.other-albums a {
+	max-width: 64px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.other-albums a img {
+	width: 100%;
+	border: 1px solid #eee;
+	margin-bottom: 0.5rem;
 }

@@ -27,7 +27,6 @@ setTimeout(function() {
 	if ($(window).scrollTop() == 0) {
 		if (!isScrolling)
 			scroll2top();
-			$('#contact').css('opacity', '1')
 	}
 }, 1000);
 
@@ -44,8 +43,5 @@ addEventListener("scroll", function() {
 		}
 	}
 
-	if (window.scrollY < $('a[name="top').position().top) {
-		$('#contact').css('opacity', '0')
-	}
 	lastScrollTop = st;
 }, true);
